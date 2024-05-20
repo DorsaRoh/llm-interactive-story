@@ -109,11 +109,11 @@ button:hover {
 }
 
 .chat-message.user {
-    color: #851717;
+    color: #851717af;
     font-style: italic;
 }
 
 .chat-message.assistant {
-  color: #ffffff;
+  color: white;
 }
 
