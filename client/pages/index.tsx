@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const Index: React.FC = () => {
-  const [message, setMessage] = useState("Loading");
   const [prompt, setPrompt] = useState("");
   const [chatHistory, setChatHistory] = useState<{ role: string; content: string }[]>([]);
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -10,12 +9,8 @@ const Index: React.FC = () => {
   useEffect(() => {
     fetch("http://localhost:8080/api/home")
       .then((response) => response.json())
-      .then((data) => {
-        setMessage(data.message);
-      })
       .catch((error) => {
         console.error("Error fetching home data:", error);
-        setMessage("Error loading data");
       });
   }, []);
 
@@ -56,18 +51,8 @@ const Index: React.FC = () => {
     <div className="app-container">
       <header className="app-header">
         <h1>Interactive Odyssey</h1>
-        <p>{message}</p>
       </header>
       <main className="app-main">
-        <div className="input-container">
-          <textarea
-            value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
-            placeholder="Enter your prompt here"
-            rows={4}
-          />
-          <button onClick={handleGenerateText}>Submit</button>
-        </div>
         <div className="narrative-intro">
           As the sun rises over the ancient city of Troy, you, Odysseus, stand at the head of your army, strategizing the next move in the siege against the impenetrable walls of the city. The Trojan War has raged on for years, and your cunning mind has been instrumental in the Greek army's victories thus far. Your keen intellect and resourcefulness have earned you the respect of your comrades and the favor of the gods. However, the path to victory is fraught with challenges and dangers. As you survey the battlefield, a messenger approaches you, bearing news of a potential traitor within the walls of Troy. It seems a Trojan princess, Cassandra, has been secretly communicating with the Greek forces, offering valuable insights into the city's defenses. Your next move could determine the fate of the war.
         </div>
@@ -82,6 +67,15 @@ const Index: React.FC = () => {
               <p>{chat.content}</p>
             </div>
           ))}
+        </div>
+        <div className="input-container">
+          <textarea
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            placeholder="Enter your prompt here"
+            rows={4}
+          />
+          <button onClick={handleGenerateText}>Submit</button>
         </div>
       </main>
     </div>

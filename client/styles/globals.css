@@ -19,7 +19,7 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
-  color: rgba(18, 18, 18, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   background: url('/back.jpg') no-repeat center center fixed;
   background-size: cover;
   line-height: 1.6;
@@ -35,8 +35,8 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
