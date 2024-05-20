@@ -46,11 +46,12 @@ const Index: React.FC = () => {
   return (
     <div>
       <div>{message}</div>
+      <div>As the sun rises over the ancient city of Troy, you, Odysseus, stand at the head of your army, strategizing the next move in the siege against the impenetrable walls of the city. The Trojan War has raged on for years, and your cunning mind has been instrumental in the Greek army's victories thus far. Your keen intellect and resourcefulness have earned you the respect of your comrades and the favor of the gods. However, the path to victory is fraught with challenges and dangers. As you survey the battlefield, a messenger approaches you, bearing news of a potential traitor within the walls of Troy. It seems a Trojan princess, Cassandra, has been secretly communicating with the Greek forces, offering valuable insights into the city's defenses. Your next move could determine the fate of the war. Do you: Intercept the messenger and extract as much information as possible to exploit the traitor's knowledge? Send a covert team to rescue Cassandra and bring her to your camp for questioning? Ignore the information and focus on the current battle strategy, hesitant to trust the words of a potential spy?</div>
       <div>
         <div>
           {chatHistory.map((chat, index) => (
             <div key={index} style={{ margin: "10px 0" }}>
-              <strong>{chat.role === "user" ? "Odysseus" : "Narrator"}:</strong>
+              <strong>{chat.role === "user" ? "Odysseus" : "___"}</strong>
               <p>{chat.content}</p>
             </div>
           ))}

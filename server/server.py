@@ -36,10 +36,10 @@ def generate_text():
         response = client.chat.completions.create(
             model="gpt-3.5-turbo", # model
             messages=[ # role of model and user
-            {"role": "system", "content": "You are a narrative guide for the user who plays as Odysseus, leading them through the epic journey of the fall of Troy and the Odyssey. Respond to user inputs by continuing the story, providing immersive and engaging narrative elements, and guiding the user through key decision points in the story."},
+            {"role": "system", "content": "You are a very detailed narrative guide for the user who plays as Odysseus, leading them through the epic journey of the fall of Troy and the Odyssey. Respond to user inputs by continuing the story, providing immersive and engaging narrative elements, and guiding the user through key decision points in the story. You do NOT leave out ANY information (ex. dialogue, secrets, whispers, everything). EVERY little detail is included. Each response should end with an engaging question that provokes the reader to continue."},
             {"role": "user", "content": prompt}
             ],
-            max_tokens=1000,
+            max_tokens=500,
             temperature=0.9
         )
         generated_text = response.choices[0].message.content
