@@ -54,7 +54,14 @@ const Index: React.FC = () => {
       </header>
       <main className="app-main">
         <div className="narrative-intro">
-          As the sun rises over the ancient city of Troy, you, Odysseus, stand at the head of your army, strategizing the next move in the siege against the impenetrable walls of the city. The Trojan War has raged on for years, and your cunning mind has been instrumental in the Greek army's victories thus far. Your keen intellect and resourcefulness have earned you the respect of your comrades and the favor of the gods. However, the path to victory is fraught with challenges and dangers. As you survey the battlefield, a messenger approaches you, bearing news of a potential traitor within the walls of Troy. It seems a Trojan princess, Cassandra, has been secretly communicating with the Greek forces, offering valuable insights into the city's defenses. Your next move could determine the fate of the war.
+          As the sun rises over the ancient city of Troy, you, Odysseus, stand at the head of your army, strategizing the next move in the siege against the impenetrable walls of the city. 
+          <p>
+          The Trojan War has raged on for years, and your cunning mind has been instrumental in the Greek army's victories thus far. However, the path to victory is fraught with challenges and dangers. 
+          </p>
+          <p>
+          As you survey the battlefield, a messenger approaches you, bearing news of a potential traitor within the walls of Troy. It seems a Trojan princess, Cassandra, has been secretly communicating with the Greek forces, offering valuable insights into the city's defenses. 
+          Your next move could determine the fate of the war. What shall you do?
+          </p>
         </div>
         <div className="chat-container" ref={chatContainerRef}>
           {chatHistory.map((chat, index) => (
@@ -63,7 +70,7 @@ const Index: React.FC = () => {
               className={`chat-message ${chat.role}`}
               ref={chat.role === "user" ? lastUserMessageRef : null}
             >
-              <strong>{chat.role === "user" ? "Odysseus" : "Narrator"}:</strong>
+              <strong>{chat.role === "user" ? "Odysseus" : ""}</strong>
               <p>{chat.content}</p>
             </div>
           ))}
@@ -72,8 +79,8 @@ const Index: React.FC = () => {
           <textarea
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
-            placeholder="Enter your prompt here"
-            rows={4}
+            placeholder="Speak your wisdom, Odysseus..."
+            rows={3}
           />
           <button onClick={handleGenerateText}>Submit</button>
         </div>

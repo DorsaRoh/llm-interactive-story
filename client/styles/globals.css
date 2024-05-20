@@ -6,9 +6,6 @@
   --margin-default: 9%;
   --margin-small: 10px;
   --margin-medium: 10px;
-  --link-hover: #006E61;
-  --link: #00bda7;
-  --light-grey: #a2aecb;
 }
 
 * {
@@ -18,6 +15,8 @@
 }
 
 body {
+  margin-top:7%;
+  margin-bottom:7%;
   font-family: 'DM Sans', sans-serif;
   color: rgba(255, 255, 255, 0.87);
   background: url('/back.jpg') no-repeat center center fixed;
@@ -26,22 +25,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .app-container {
-  text-align: center;
-  max-width: 600px;
-  width: 100%;
+  text-align: left;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
+  background: rgba(183, 121, 82, 0.1); /* Darker background */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  border-radius: 8px;
-  display: flex;
+  backdrop-filter: blur(6px);
   flex-direction: column;
   justify-content: center;
-}
+  border-radius:16px;
+} 
+
 
 .app-header {
   margin-bottom: 30px;
@@ -51,44 +49,30 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5em;
   margin-bottom: 10px;
+  text-align:center;
 }
 
-.app-header p {
-  font-size: 1em;
-  color: #666;
-}
 
-.app-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.input-container {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.input-container h2 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-
-textarea {
+.input-container textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.7);
   color: #333;
   border: 1px solid #ddd;
   border-radius: 4px;
   resize: none;
+  font-size: 1em;
+}
+
+.input-container textarea::placeholder {
+  color: rgba(50, 50, 50, 0.5); 
+  font-style:italic;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #00ff00;
+  padding: 7px 17px;
+  background-color: #fff1cf68;
   color: #2c2c2c;
   border: none;
   border-radius: 4px;
@@ -96,13 +80,19 @@ button {
 }
 
 button:hover {
-  background-color: #00e600;
+  background-color: #fadbe9ae;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .narrative-intro {
   margin-bottom: 20px;
   font-size: 1em;
   text-align: left;
+  font-style:italic;
+}
+
+.narrative-intro p{
+  margin-top:15px;
 }
 
 .chat-container {
@@ -119,77 +109,11 @@ button:hover {
 }
 
 .chat-message.user {
-  color: #00ff00;
+    color: #851717;
+    font-style: italic;
 }
 
 .chat-message.assistant {
-  color: #ff8800;
+  color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .app-container {
-    padding: 15px;
-  }
-
-  .app-header h1 {
-    font-size: 2em;
-  }
-
-  .app-header p {
-    font-size: 0.9em;
-  }
-
-  .narrative-intro {
-    font-size: 0.9em;
-  }
-
-  .chat-message p {
-    font-size: 0.9em;
-  }
-
-  .input-container h2 {
-    font-size: 1em;
-  }
-
-  textarea {
-    font-size: 0.9em;
-  }
-
-  button {
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .app-container {
-    padding: 10px;
-  }
-
-  .app-header h1 {
-    font-size: 1.5em;
-  }
-
-  .app-header p {
-    font-size: 0.8em;
-  }
-
-  .narrative-intro {
-    font-size: 0.8em;
-  }
-
-  .chat-message p {
-    font-size: 0.8em;
-  }
-
-  .input-container h2 {
-    font-size: 0.9em;
-  }
-
-  textarea {
-    font-size: 0.8em;
-  }
-
-  button {
-    padding: 6px 12px;
-  }
-}
