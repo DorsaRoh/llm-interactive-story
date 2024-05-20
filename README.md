@@ -1,11 +1,4 @@
-to do:
 
-- make layout (i.e. generated text above textbox, etc)
-- llm generated text needs to be added to screen, not replacing previous generated text
-- ui design
-
-
--
 # GPT-FineTune-Kit
 
 A super easy tool to fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
