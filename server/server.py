@@ -37,7 +37,7 @@ def generate_text():
             model="gpt-3.5-turbo", # model
             messages=[ # role of model and user
             {"role": "system", "content": "You are a narrative guide for the user who plays as Odysseus, leading them through the epic journey of the fall of Troy and the Odyssey. Respond to user inputs by continuing the story, providing immersive and engaging narrative elements, and guiding the user through key decision points in the story."},
-                {"role": "user", "content": prompt}
+            {"role": "user", "content": prompt}
             ],
             max_tokens=1000,
             temperature=0.9
