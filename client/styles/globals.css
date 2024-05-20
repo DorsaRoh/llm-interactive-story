@@ -1,27 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tangerine:wght@400;700&display=swap');
 
-* {
-    font-family: Open Sans, sans-serif;
-    margin-left: 10px;
+:root {
+  --margin-default: 9%;
+  --margin-small: 10px;
+  --margin-medium: 10px;
+  --link-hover: #006E61;
+  --link: #00bda7;
+  --light-grey: #a2aecb;
 }
 
-.container {
-    padding: 20px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(18, 18, 18, 0.87);
+  background: url('/back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-header {
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  font-size: 1em;
+  color: #666;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e600;
+}
+
+.narrative-intro {
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: left;
+}
+
+.chat-container {
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: left;
+  margin-bottom: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message.user {
+  color: #00ff00;
+}
+
+.chat-message.assistant {
+  color: #ff8800;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
   }
-  
-  .inputArea {
-    margin-bottom: 20px;
+
+  .app-header h1 {
+    font-size: 2em;
   }
-  
-  .textarea {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 10px;
+
+  .app-header p {
+    font-size: 0.9em;
   }
-  
-  .response {
-    margin-top: 20px;
-    color: #555;
-    fontStyle: italic;
+
+  .narrative-intro {
+    font-size: 0.9em;
   }
-  
+
+  .chat-message p {
+    font-size: 0.9em;
+  }
+
+  .input-container h2 {
+    font-size: 1em;
+  }
+
+  textarea {
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .app-header h1 {
+    font-size: 1.5em;
+  }
+
+  .app-header p {
+    font-size: 0.8em;
+  }
+
+  .narrative-intro {
+    font-size: 0.8em;
+  }
+
+  .chat-message p {
+    font-size: 0.8em;
+  }
+
+  .input-container h2 {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+}
