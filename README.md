@@ -1,5 +1,5 @@
 
-# Infinite Interactive Story Generation - The Odyssey
+# LLM Interactive Story
 
 LLM-powered infinite story generator. Here, is an example: the ancient greek stories of 'The Odyssey'. The LLM is fine-tuned on the story.
 
