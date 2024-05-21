@@ -114,6 +114,9 @@ button:hover {
 .chat-message.user{
     color: #851717af;
     font-style:italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:bold;
+    font-size:20px;
 }
 
 .chat-message.assistant {

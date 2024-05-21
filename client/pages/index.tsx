@@ -70,7 +70,7 @@ const Index: React.FC = () => {
               className={`chat-message ${chat.role}`}
               ref={chat.role === "user" ? lastUserMessageRef : null}
             >
-              {chat.role === "user" ? <div className="odysseus" style={{ textAlign: "center", fontWeight:"bold", fontStyle:"normal" }}>ODYSSEUS</div> : ""}
+              {chat.role === "user" ? <div className="odysseus" style={{ textAlign: "center", fontWeight:"bold", fontStyle:"normal", fontFamily:"none" }}>ODYSSEUS</div> : ""}
               <p>{chat.content}</p>
             </div>
           ))}
