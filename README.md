@@ -5,6 +5,8 @@ LLM-powered infinite story generator. Here, is an example: the ancient greek sto
 
 You, the user, play as Odysseus - a cunning greek warrior that famously created the plan to sack the city of Troy using a giant wooden horse.
 
+<img width="1064" alt="Screenshot 2024-05-21 164717" src="https://github.com/DorsaRoh/llm-interactive-story/assets/85207154/9dacfee2-48a2-4cc2-a889-cf4278b3c3f5">
+<img width="1067" alt="Screenshot 2024-05-21 165014" src="https://github.com/DorsaRoh/llm-interactive-story/assets/85207154/f83182ee-31d0-4cfa-953b-9221dea13796">
 
 ## How it Works
 
