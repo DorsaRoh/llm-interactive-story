@@ -102,7 +102,7 @@ button:hover {
   overflow-y: auto;
   text-align: left;
   margin-bottom: 20px;
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #ddd;
   padding-top: 10px;
 }
 
