@@ -1,11 +1,9 @@
 
-# GPT-FineTune-Kit
+# Infinite Story Generator - The Odyssey
 
-A super easy tool to fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
+LLM-powered infinite story generator. Here, is an example: the ancient greek stories of 'The Odyssey'. The LLM is fine-tuned on the story.
 
-### What's Fine-Tuning?
-
-Fine-tuning is training a pre-trained AI model (like GPT) on a specific dataset to adapt it to particular needs or improve its performance on certain types of tasks!
+You, the user, play as Odysseus - a cunning greek warrior that famously created the plan to sack the city of Troy using a giant wooden horse.
 
 
 ## How it Works
