@@ -13,7 +13,7 @@ You, the user, play as Odysseus - a cunning greek warrior that famously created 
 <img width="1067" alt="Screenshot 2024-05-21 165014" src="https://github.com/DorsaRoh/llm-interactive-story/assets/85207154/f83182ee-31d0-4cfa-953b-9221dea13796">
 
 
-Created as a sample use case of: (Easily fine-tune AI models)[https://github.com/DorsaRoh/gpt-finetune-kit]
+Created as a sample use case of: [Easily fine-tune AI models](https://github.com/DorsaRoh/gpt-finetune-kit)
 
 ## How it Works
 
