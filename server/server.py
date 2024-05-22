@@ -21,6 +21,8 @@ CORS(app)
 
 # /api/home
 @app.route("/api/home", methods=['GET'])
+def index():
+    return jsonify({'message': 'Welcome to the OpenAI GPT-3.5 Turbo API!'})
 
 # /api/text
 @app.route("/api/text", methods=['POST'])
