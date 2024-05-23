@@ -15,7 +15,7 @@
 }
 
 body {
-  margin-top: 7%;
+  margin-top: 4%;
   margin-bottom: 7%;
   font-family: 'Cormorant Garamond', serif;
   color: rgba(32, 30, 30, 0.87);
@@ -29,7 +29,7 @@ body {
 
 .app-container {
   text-align: left;
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 20px;
   background: rgba(254, 239, 229, 0.295);
@@ -37,7 +37,7 @@ body {
   backdrop-filter: blur(7px);
   flex-direction: column;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .app-header {
@@ -55,11 +55,12 @@ body {
 
 .narrative-intro {
   margin-bottom: 20px;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-align: left;
   font-style: italic;
   color: #432818;
   line-height: 1.8; 
+  font-weight:bolder;
 }
 
 .narrative-intro p {
