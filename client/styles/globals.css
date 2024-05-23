@@ -55,12 +55,14 @@ body {
 
 .narrative-intro {
   margin-bottom: 20px;
+  
   font-size: 1.3em;
+  font-weight:bolder;
+
   text-align: left;
   font-style: italic;
   color: #432818;
   line-height: 1.8; 
-  font-weight:bolder;
 }
 
 .narrative-intro p {
@@ -76,14 +78,14 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   resize: none;
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight:bolder;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
-  transition: border-color 0.3s ease-in-out; /* Smooth transition on focus */
+  transition: border-color 0.3s ease-in-out; /* smoother transition on focus */
 }
 
 .input-container textarea:focus {
-  border-color: #b37752; /* Change border color on focus */
+  border-color: #b37752;
 }
 
 .input-container textarea::placeholder {
@@ -125,10 +127,12 @@ button:hover {
   color: #851717af;
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 1.3em;
+  font-weight:bolder;
 }
 
 .chat-message.assistant {
   color: rgba(32, 30, 30, 0.87);
+  font-size: 1.3em;
+  font-weight:bolder;
 }
